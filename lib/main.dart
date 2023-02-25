@@ -47,6 +47,7 @@ class _HomePageState extends State<HomePage> {
   Sentence _sentenceTemp = Sentence();
   final _historicSentences = <Sentence>[];
   final ScrollController _listController = ScrollController();
+  bool _showDisabledCards = true;
 
   @override
   Widget build(BuildContext context) {
@@ -90,21 +91,43 @@ class _HomePageState extends State<HomePage> {
           PopupMenuItem(
             enabled: _sentenceTemp.cards.isNotEmpty,
             value: PopupMenuAction.clear,
-            child: const Text('Limpar'),
+            child: ListTile(
+              leading: const Icon(Icons.clear_all),
+              enabled: _sentenceTemp.cards.isNotEmpty,
+              title: const Text('Limpar'),
+            ),
           ),
+          CheckedPopupMenuItem(
+            value: PopupMenuAction.showDisabledCards,
+            checked: _showDisabledCards,
+            child: const Text('Mostrar cartas desativadas'),
+          ),
+          const PopupMenuDivider(),
           const PopupMenuItem(
             value: PopupMenuAction.downloadCards,
-            child: Text('Baixar cartas'),
+            child: ListTile(
+              leading: Icon(Icons.download),
+              title: Text('Baixar cartas'),
+            ),
           ),
+          const PopupMenuDivider(),
           const PopupMenuItem(
             value: PopupMenuAction.about,
-            child: Text('Sobre'),
+            child: ListTile(
+              leading: Icon(Icons.info),
+              title: Text('Sobre'),
+            ),
           ),
         ],
         onSelected: (action) {
           switch (action) {
             case PopupMenuAction.clear:
               _clear();
+              break;
+            case PopupMenuAction.showDisabledCards:
+              setState(() {
+                _showDisabledCards = !_showDisabledCards;
+              });
               break;
             case PopupMenuAction.downloadCards:
               _downloadCards();
@@ -244,11 +267,13 @@ class _HomePageState extends State<HomePage> {
             TypesCards.exclusiveDisjunction,
             TypesCards.conditional,
             TypesCards.biconditional,
-          ].map((type) {
+          ].where((type) {
+            return _showDisabledCards ? true : _getEnableCard(type);
+          }).map((type) {
             return CardWidget(
               type: type,
               onTap: () => _onTapCard(type),
-              enable: _getEnableCard(type),
+              enable: _showDisabledCards ? _getEnableCard(type) : true,
             );
           }).toList(),
         ),
@@ -313,6 +338,7 @@ class _HomePageState extends State<HomePage> {
 
 enum PopupMenuAction {
   clear,
+  showDisabledCards,
   downloadCards,
   about,
 }
