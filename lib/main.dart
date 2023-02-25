@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart' hide Card;
+import 'package:flutter/services.dart';
 import 'package:flutter_math_fork/flutter_math.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -140,13 +141,18 @@ class _HomePageState extends State<HomePage> {
   }
 
   void _downloadCards() async {
-    const url = 'https://www.google.com'; //TODO
+    const url =
+        'https://github.com/samydsousa/logiccards/tree/main/images/cheap/Logic%20Cards.pdf';
     try {
       final uri = Uri.parse(url);
       if (await canLaunchUrl(uri)) {
-        await launchUrl(uri);
+        await launchUrl(
+          uri,
+          mode: LaunchMode.externalApplication,
+        );
       }
-    } on FormatException catch (_) {}
+    } on FormatException catch (_) {
+    } on PlatformException catch (_) {}
   }
 
   Widget _historicWidget() {
