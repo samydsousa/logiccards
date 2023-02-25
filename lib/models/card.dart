@@ -35,23 +35,24 @@ enum TypesCards {
   }
 
   String get imagePath {
+    const parent = 'images/colorful/';
     switch (this) {
       case TypesCards.vTrue:
-        return 'images/verdadeiro.png';
+        return '${parent}verdadeiro.png';
       case TypesCards.vFalse:
-        return 'images/falso.png';
+        return '${parent}falso.png';
       case TypesCards.conjunction:
-        return 'images/conjuncao.png';
+        return '${parent}conjuncao.png';
       case TypesCards.inclusiveDisjunction:
-        return 'images/disjuncao_inclusiva.png';
+        return '${parent}disjuncao_inclusiva.png';
       case TypesCards.exclusiveDisjunction:
-        return 'images/disjuncao_exclusiva.png';
+        return '${parent}disjuncao_exclusiva.png';
       case TypesCards.conditional:
-        return 'images/condicional.png';
+        return '${parent}condicional.png';
       case TypesCards.biconditional:
-        return 'images/bicondicional.png';
+        return '${parent}bicondicional.png';
       case TypesCards.negation:
-        return 'images/negacao.png';
+        return '${parent}negacao.png';
       default:
         return '';
     }
