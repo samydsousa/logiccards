@@ -1,12 +1,38 @@
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:markdown_widget/markdown_widget.dart';
+import 'package:url_launcher/url_launcher.dart';
+
+class AboutPage extends StatelessWidget {
+  const AboutPage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Sobre'),
+      ),
+      body: FutureBuilder<String>(
+        future: rootBundle.loadString('README.md'),
+        builder: (BuildContext context, AsyncSnapshot<String> snapshot) {
+          if (snapshot.hasData) {
+            return MarkdownWidget(
+              config: MarkdownConfig(configs: [
+                LinkConfig(onTap: _launchUrl),
+                const PConfig(
+                    textStyle: TextStyle(
+                  fontSize: 16,
+                ))
+              ]),
+              data: snapshot.data.toString(),
+              /* '''
 # Logic Cards
 
 Aplicativo criado para desenvolver uma abordagem fundamentada na metodologia da gamificação na disciplina de Lógica, do curso de Tecnologia em Análise e Desenvolvimento de Sistemas, do Instituto Federal de Educação, Ciência e Tecnologia do Pará (IFPA), Campus Paragominas.
 
 A proposta foi a criação de uma baralho que pode ser impresso a partir das imagens disponíveis no diretório [images/colorful](https://github.com/samydsousa/logiccards/tree/main/images/colorful) cujo objetivo é que as cartas sejam jogadas de maneira a formar proposições lógicas. O aplicativo serve apenas para indicar as cartas que podem ser jogadas bem como o valor das proposições que vão se formando.
 
-A versão para Andoid está disponível no Google Play por meio do endereço [https://](https://). 
-
-O código fonte do aplicativo está disponível no Github por meio do repositório [logiccards](https://github.com/samydsousa/logiccards/tree/main).
+A versão para Andoid está disponível no Google Play por meio do endereço [https://](https://).
 
 ## Regras do Jogo
 
@@ -24,3 +50,23 @@ O código fonte do aplicativo está disponível no Github por meio do repositór
 - Caso a regra anterior não possa mais ser aplicada, o próximo jogador fará sua jogada;
 - O vencedor da partida será o primeiro que conseguir jogar todas as suas cartas;
 - Se a partida estiver sendo jogada por mais de duas pessoas, o jogo pode continuar com os demais jogadores.
+''' */
+            );
+          } else {
+            return const Text('Carregando...');
+          }
+        },
+      ),
+    );
+  }
+
+  _launchUrl(url) async {
+    try {
+      final uri = Uri.parse(url);
+      if (await canLaunchUrl(uri)) {
+        await launchUrl(uri);
+      }
+    } on FormatException catch (_) {
+    } on PlatformException catch (_) {}
+  }
+}

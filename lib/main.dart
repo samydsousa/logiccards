@@ -3,6 +3,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart' hide Card;
 import 'package:flutter/services.dart';
 import 'package:flutter_math_fork/flutter_math.dart';
+import 'package:logiccards/widgets/about_page.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import 'models/card.dart';
@@ -95,6 +96,10 @@ class _HomePageState extends State<HomePage> {
             value: PopupMenuAction.downloadCards,
             child: Text('Baixar cartas'),
           ),
+          const PopupMenuItem(
+            value: PopupMenuAction.about,
+            child: Text('Sobre'),
+          ),
         ],
         onSelected: (action) {
           switch (action) {
@@ -103,6 +108,14 @@ class _HomePageState extends State<HomePage> {
               break;
             case PopupMenuAction.downloadCards:
               _downloadCards();
+              break;
+            case PopupMenuAction.about:
+              () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const AboutPage()),
+                );
+              }();
               break;
           }
         },
@@ -301,4 +314,5 @@ class _HomePageState extends State<HomePage> {
 enum PopupMenuAction {
   clear,
   downloadCards,
+  about,
 }
