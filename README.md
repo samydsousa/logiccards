@@ -1,4 +1,3 @@
-<div style="text-align: justify">
 # Logic Cards
 
 Aplicativo criado para desenvolver uma abordagem fundamentada na metodologia da gamificação na disciplina de Lógica, do curso de Tecnologia em Análise e Desenvolvimento de Sistemas, do Instituto Federal de Educação, Ciência e Tecnologia do Pará (IFPA), Campus Paragominas.
@@ -23,4 +22,3 @@ A versão para Andoid está disponível no Google Play por meio do endereço [ht
 - Caso a regra anterior não possa mais ser aplicada, o próximo jogador fará sua jogada;
 - O vencedor da partida será o primeiro que conseguir jogar todas as suas cartas;
 - Se a partida estiver sendo jogada por mais de duas pessoas, o jogo pode continuar com os demais jogadores.
-</div>
