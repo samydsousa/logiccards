@@ -178,7 +178,7 @@ class _HomePageState extends State<HomePage> {
 
   void _downloadCards() async {
     const url =
-        'https://github.com/samydsousa/logiccards/tree/main/images/cheap/Logic%20Cards.pdf';
+        'https://github.com/samydsousa/logiccards/raw/main/images/cheap/Logic%20Cards.pdf';
     try {
       final uri = Uri.parse(url);
       if (await canLaunchUrl(uri)) {
