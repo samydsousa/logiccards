@@ -2,7 +2,7 @@
 
 Aplicativo criado para desenvolver uma abordagem fundamentada na metodologia da gamificação na disciplina de Lógica, do curso de Tecnologia em Análise e Desenvolvimento de Sistemas, do Instituto Federal de Educação, Ciência e Tecnologia do Pará (IFPA), Campus Paragominas.
 
-A proposta foi a criação de uma baralho que pode ser impresso a partir das imagens disponíveis no diretório [images/colorful](https://github.com/samydsousa/logiccards/tree/main/images/colorful) cujo objetivo é que as cartas sejam jogadas de maneira a formar proposições lógicas. O aplicativo serve apenas para indicar as cartas que podem ser jogadas bem como o valor das proposições que vão se formando.
+A proposta foi a criação de uma baralho que pode ser impresso a partir das imagens disponíveis no diretório [images\cheap](https://github.com/samydsousa/logiccards/tree/main/images/cheap) cujo objetivo é que as cartas sejam jogadas de maneira a formar proposições lógicas. O aplicativo serve apenas para indicar as cartas que podem ser jogadas bem como o valor das proposições que vão se formando.
 
 A versão para Andoid está disponível no Google Play por meio do endereço [https://play.google.com/store/apps/details?id=com.sslourenco.logiccards](https://play.google.com/store/apps/details?id=com.sslourenco.logiccards). 
 
@@ -24,6 +24,9 @@ O código fonte do aplicativo está disponível no Github por meio do repositór
 - Caso a regra anterior não possa mais ser aplicada, o próximo jogador fará sua jogada;
 - O vencedor da partida será o primeiro que conseguir jogar todas as suas cartas;
 - Se a partida estiver sendo jogada por mais de duas pessoas, o jogo pode continuar com os demais jogadores.
+
+## Privacidade
+Ao utilizar este aplicativo você concorna com a **[Política de Privacidade](https://github.com/samydsousa/logiccards/tree/main/privacy_policy_pt.md)** e com os **[Termos e Condições](https://github.com/samydsousa/logiccards/tree/main/terms_and_conditions_pt.md)** a ele relacionados.
 
 ## Versão
 1.0.1+3
