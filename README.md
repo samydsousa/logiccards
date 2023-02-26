@@ -4,7 +4,7 @@ Aplicativo criado para desenvolver uma abordagem fundamentada na metodologia da 
 
 A proposta foi a criação de uma baralho que pode ser impresso a partir das imagens disponíveis no diretório [images/colorful](https://github.com/samydsousa/logiccards/tree/main/images/colorful) cujo objetivo é que as cartas sejam jogadas de maneira a formar proposições lógicas. O aplicativo serve apenas para indicar as cartas que podem ser jogadas bem como o valor das proposições que vão se formando.
 
-A versão para Andoid está disponível no Google Play por meio do endereço [https://](https://). 
+A versão para Andoid está disponível no Google Play por meio do endereço [https://play.google.com/store/apps/details?id=com.sslourenco.logiccards](https://play.google.com/store/apps/details?id=com.sslourenco.logiccards). 
 
 O código fonte do aplicativo está disponível no Github por meio do repositório [logiccards](https://github.com/samydsousa/logiccards/tree/main).
 
