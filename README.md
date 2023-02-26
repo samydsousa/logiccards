@@ -26,7 +26,7 @@ O código fonte do aplicativo está disponível no Github por meio do repositór
 - Se a partida estiver sendo jogada por mais de duas pessoas, o jogo pode continuar com os demais jogadores.
 
 ## Privacidade
-Ao utilizar este aplicativo você concorna com a **[Política de Privacidade](https://github.com/samydsousa/logiccards/tree/main/privacy_policy_pt.md)** e com os **[Termos e Condições](https://github.com/samydsousa/logiccards/tree/main/terms_and_conditions_pt.md)** a ele relacionados.
+Ao utilizar este aplicativo você concorda com a **[Política de Privacidade](https://github.com/samydsousa/logiccards/tree/main/privacy_policy_pt.md)** e com os **[Termos e Condições](https://github.com/samydsousa/logiccards/tree/main/terms_and_conditions_pt.md)** a ele relacionados.
 
 ## Versão
-1.0.1+3
+1.0.2+4
