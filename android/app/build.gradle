@@ -72,6 +72,9 @@ android {
             //shrinkResources true
             //minifyEnabled true
             signingConfig signingConfigs.release
+            ndk {
+                debugSymbolLevel 'FULL' //SYMBOL_TABLE | FULL
+            }
         }
     }
 
