@@ -24,3 +24,6 @@ O código fonte do aplicativo está disponível no Github por meio do repositór
 - Caso a regra anterior não possa mais ser aplicada, o próximo jogador fará sua jogada;
 - O vencedor da partida será o primeiro que conseguir jogar todas as suas cartas;
 - Se a partida estiver sendo jogada por mais de duas pessoas, o jogo pode continuar com os demais jogadores.
+
+## Versão
+1.0.1+3
