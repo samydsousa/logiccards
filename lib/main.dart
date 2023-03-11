@@ -16,6 +16,10 @@ import 'widgets/sentence_widget.dart';
 void main() {
   //WidgetsFlutterBinding.ensureInitialized();
   //CardsColors.getColors();
+  /* SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
+    systemNavigationBarColor: Colors.white,
+    systemNavigationBarIconBrightness: Brightness.light,
+  )); */
   runApp(const LogicCards());
 }
 
@@ -53,6 +57,11 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        systemOverlayStyle: SystemUiOverlayStyle.light.copyWith(
+          systemNavigationBarColor: Theme.of(context).scaffoldBackgroundColor,
+          systemNavigationBarIconBrightness: Brightness.dark,
+          statusBarColor: Colors.transparent,
+        ),
         title: Text(widget.title),
         actions: _actions(),
       ),
