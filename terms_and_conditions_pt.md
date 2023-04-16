@@ -6,7 +6,7 @@ Ao baixar ou usar o aplicativo, esses termos serão aplicados automaticamente a 
 
 SSLOURENCO está empenhada em garantir que o aplicativo seja o mais útil e eficiente possível. Por esse motivo, nos reservamos o direito de fazer alterações no aplicativo ou cobrar por seus serviços, a qualquer momento e por qualquer motivo. Nunca cobraremos pelo aplicativo ou seus serviços sem deixar bem claro para você exatamente o que você está pagando.
 
-O aplicativo Logic Cards armazena e processa os dados pessoais que você nos forneceu para fornecer nosso Serviço. É sua responsabilidade manter seu telefone e acesso ao aplicativo seguros. Portanto, recomendamos que você não faça jailbreak ou root em seu telefone, que é o processo de remoção de restrições e limitações de software impostas pelo sistema operacional oficial do seu dispositivo. Isso pode tornar seu telefone vulnerável a malware/vírus/programas maliciosos, comprometer os recursos de segurança do seu telefone e pode significar que o aplicativo Logic Cards não funcionará corretamente ou não funcionará.
+O aplicativo Baralho de Lógica armazena e processa os dados pessoais que você nos forneceu para fornecer nosso Serviço. É sua responsabilidade manter seu telefone e acesso ao aplicativo seguros. Portanto, recomendamos que você não faça jailbreak ou root em seu telefone, que é o processo de remoção de restrições e limitações de software impostas pelo sistema operacional oficial do seu dispositivo. Isso pode tornar seu telefone vulnerável a malware/vírus/programas maliciosos, comprometer os recursos de segurança do seu telefone e pode significar que o aplicativo Baralho de Lógica não funcionará corretamente ou não funcionará.
 
 O aplicativo usa serviços de terceiros que declaram seus Termos e Condições.
 

@@ -1,4 +1,4 @@
-# Logic Cards
+# Baralho de Lógica
 
 Aplicativo criado para desenvolver uma abordagem fundamentada na metodologia da gamificação na disciplina de Lógica, do curso de Tecnologia em Análise e Desenvolvimento de Sistemas, do Instituto Federal de Educação, Ciência e Tecnologia do Pará (IFPA), Campus Paragominas.
 
@@ -29,4 +29,4 @@ O código fonte do aplicativo está disponível no Github por meio do repositór
 Ao utilizar este aplicativo você concorda com a **[Política de Privacidade](https://github.com/samydsousa/logiccards/tree/main/privacy_policy_pt.md)** e com os **[Termos e Condições](https://github.com/samydsousa/logiccards/tree/main/terms_and_conditions_pt.md)** a ele relacionados.
 
 ## Versão
-1.0.2+4
+1.0.3+5

@@ -2,13 +2,13 @@
 
 Access the [portuguese version](https://github.com/samydsousa/logiccards/tree/main/privacy_policy_pt.md) of this Privacy Policy.
 
-SSLOURENCO built the Logic Cards app as open source app. This SERVICE is provided by SSLOURENCO at no cost.
+SSLOURENCO built the Baralho de Lógica app as open source app. This SERVICE is provided by SSLOURENCO at no cost.
 
 This page is used to inform visitors regarding our policies with the collection, use, and disclosure of Personal Information if anyone decided to use our Service.
 
 If you choose to use our Service, then you agree to the collection and use of information in relation to this policy. The Personal Information that we collect is used for providing and improving the Service. We will not use or share your information with anyone except as described in this Privacy Policy.
 
-The terms used in this Privacy Policy have the same meanings as in our [Terms and Conditions](https://github.com/samydsousa/logiccards/tree/main/terms_and_conditions_en.md), which are accessible at Logic Cards unless otherwise defined in this Privacy Policy.
+The terms used in this Privacy Policy have the same meanings as in our [Terms and Conditions](https://github.com/samydsousa/logiccards/tree/main/terms_and_conditions_en.md), which are accessible at Baralho de Lógica unless otherwise defined in this Privacy Policy.
 
 **Information Collection and Use**
 

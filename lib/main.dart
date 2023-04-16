@@ -29,11 +29,12 @@ class LogicCards extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Logic Cards',
+      debugShowCheckedModeBanner: false,
+      title: 'Baralho de Lógica',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const HomePage(title: 'Logic Cards'),
+      home: const HomePage(title: 'Baralho de Lógica'),
     );
   }
 }

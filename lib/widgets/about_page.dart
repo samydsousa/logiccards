@@ -26,7 +26,7 @@ class AboutPage extends StatelessWidget {
               ]),
               data: snapshot.data.toString(),
               /* '''
-# Logic Cards
+# Baralho de Lógica
 
 Aplicativo criado para desenvolver uma abordagem fundamentada na metodologia da gamificação na disciplina de Lógica, do curso de Tecnologia em Análise e Desenvolvimento de Sistemas, do Instituto Federal de Educação, Ciência e Tecnologia do Pará (IFPA), Campus Paragominas.
 

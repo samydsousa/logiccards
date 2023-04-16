@@ -11,7 +11,7 @@
     </queries>
 
    <application
-        android:label="Logic Cards"
+        android:label="Baralho de Lógica"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

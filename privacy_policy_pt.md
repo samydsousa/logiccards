@@ -2,13 +2,13 @@
 
 _Acesse a [versão em inglês](https://github.com/samydsousa/logiccards/tree/main/privacy_policy_en.md) desta Política de Privacidade._
 
-SSLOURENCO construiu o aplicativo Logic Cards como um aplicativo de código aberto. Este SERVIÇO é fornecido por SSLOURENCO sem nenhum custo.
+SSLOURENCO construiu o aplicativo Baralho de Lógica como um aplicativo de código aberto. Este SERVIÇO é fornecido por SSLOURENCO sem nenhum custo.
 
 Esta página é usada para informar os visitantes sobre nossas políticas de coleta, uso e divulgação de informações pessoais, caso alguém decida usar nosso serviço.
 
 Se você optar por usar nosso Serviço, concorda com a coleta e o uso de informações relacionadas a esta política. As informações pessoais que coletamos são usadas para fornecer e melhorar o serviço. Não usaremos ou compartilharemos suas informações com ninguém, exceto conforme descrito nesta Política de Privacidade.
 
-Os termos usados nesta Política de Privacidade têm os mesmos significados que em nossos [Termos e Condições](https://github.com/samydsousa/logiccards/tree/main/terms_and_conditions_pt.md), que estão acessíveis em Logic Cards a menos que definido de outra forma nesta Política de Privacidade.
+Os termos usados nesta Política de Privacidade têm os mesmos significados que em nossos [Termos e Condições](https://github.com/samydsousa/logiccards/tree/main/terms_and_conditions_pt.md), que estão acessíveis em Baralho de Lógica a menos que definido de outra forma nesta Política de Privacidade.
 
 **Coleta e uso de informações**
 
