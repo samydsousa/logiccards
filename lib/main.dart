@@ -91,7 +91,7 @@ class _HomePageState extends State<HomePage> {
 
   List<Widget>? _actions() {
     return [
-      if (_sentenceTemp.cards.isNotEmpty)
+      if (_sentenceTemp.isNotEmpty)
         IconButton(
           icon: const Icon(Icons.undo),
           onPressed: _undo,
@@ -99,11 +99,11 @@ class _HomePageState extends State<HomePage> {
       PopupMenuButton<PopupMenuAction>(
         itemBuilder: (context) => [
           PopupMenuItem(
-            enabled: _sentenceTemp.cards.isNotEmpty,
+            enabled: _sentenceTemp.isNotEmpty,
             value: PopupMenuAction.clear,
             child: ListTile(
               leading: const Icon(Icons.clear_all),
-              enabled: _sentenceTemp.cards.isNotEmpty,
+              enabled: _sentenceTemp.isNotEmpty,
               title: const Text('Limpar'),
             ),
           ),
@@ -157,9 +157,8 @@ class _HomePageState extends State<HomePage> {
   }
 
   void _undo() {
-    if (_sentenceTemp.cards.isEmpty) return;
-    _sentenceTemp.cards.removeLast();
-    if (_sentenceTemp.cards.isEmpty) {
+    _sentenceTemp.removeCard();
+    if (_sentenceTemp.isEmpty) {
       if (_historicSentences.isNotEmpty) {
         _sentenceTemp = _historicSentences.last;
         _historicSentences.removeLast();
@@ -180,7 +179,7 @@ class _HomePageState extends State<HomePage> {
     );
     if (result ?? false) {
       setState(() {
-        _sentenceTemp.cards.clear();
+        _sentenceTemp.clear();
         _historicSentences.clear();
       });
     }
@@ -291,22 +290,33 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
+  bool _getEnableCard(TypesCards type) {
+    if (_sentenceTemp.canAddCard(Card(type))) {
+      return true;
+    } else {
+      var typeCardValue = _sentenceTemp.getCardValue()?.type;
+      if (_sentenceTemp.isCompoundProposition()) {
+        // Uma carta correspondente ao valor da proposição composta já formada pode ser lançada.
+        return typeCardValue == type;
+      }
+      return false;
+    }
+  }
+
   void _onTapCard(TypesCards type) {
     _addCard(type);
   }
 
   void _addCard(TypesCards type) {
     if (_getEnableCard(type)) {
-      var isCompoundProposition = _sentenceTemp.isCompoundProposition();
-      var cardValue = _sentenceTemp.getCardValue();
-
-      if (isCompoundProposition && cardValue?.type == type) {
+      final card = Card(type);
+      if (!_sentenceTemp.canAddCard(card)) {
         _historicSentences.add(_sentenceTemp);
         _sentenceTemp = Sentence();
       }
 
       setState(() {
-        _sentenceTemp.cards.add(Card(type));
+        _sentenceTemp.addCard(card);
       });
 
       if (_listController.hasClients) {
@@ -318,31 +328,6 @@ class _HomePageState extends State<HomePage> {
         );
       }
     }
-  }
-
-  bool _getEnableCard(TypesCards type) {
-    if (_sentenceTemp.cards.isEmpty) {
-      // Início do jogo
-      return type.isValue || type.isNegation;
-    }
-
-    var typeCardValue = _sentenceTemp.getCardValue()?.type;
-    if (_sentenceTemp.isCompoundProposition() && typeCardValue == type) {
-      // Uma carta correspondente ao valor da proposição pode ser lançada
-      return true;
-    }
-
-    var lastType = _sentenceTemp.cards.last.type;
-    if (lastType.isNegation) {
-      return type.isValue;
-    }
-    if (lastType.isValue) {
-      return type.isConnective;
-    }
-    if (lastType.isConnective) {
-      return type.isValue || type.isNegation;
-    }
-    throw StateError('O tipo da carta não foi identificado.');
   }
 }
 

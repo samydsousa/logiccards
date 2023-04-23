@@ -46,7 +46,7 @@ class _SentenceWidgetState extends State<SentenceWidget> {
       child: Row(
         children: [
           Math.tex(
-            widget.sentence.cards.map((e) => e.type.latexCode).join(' '),
+            widget.sentence.toString(),
             textStyle: const TextStyle(fontSize: 28.0),
           ),
           const SizedBox(width: 16.0),

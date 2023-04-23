@@ -16,7 +16,7 @@ O código fonte do aplicativo está disponível no Github por meio do repositór
 - Quem inicia a partida e o sentido de rotação das jogadas pode ser livremente definido pelos jogadores;
 - Na sua jogada, com exceção do início da partida, cada jogador pode jogar, ordenadamente, quantas cartas desejar, desde que sejam respeitadas as regras:
     - As proposições só podem ser iniciadas por uma carta de negação (¬) ou de valor (V ou F);
-    - Após uma carta de negação só pode ser jogada uma carta de valor;
+    - Após uma carta de negação só pode ser jogada outra carta de negação ou uma carta de valor;
     - Após uma carta de valor pode ser jogada uma carta de operador (∧, ∨, ⊻, → ou ↔) ou, caso a carta de valor conclua uma proposição composta, iniciar uma nova proposição com a carta correspondente ao valor da proposição que se formou;
     - Após uma carta de operador aplica-se a regra do início de uma proposição.
 - Caso em sua jogada o jogador não possua nenhuma carta que se enquadre nas permissões anteriores, deverá pegar sequencialmente uma carta dentre as reservas até encontrar uma carta que cumpra alguma das permissões;
@@ -29,4 +29,4 @@ O código fonte do aplicativo está disponível no Github por meio do repositór
 Ao utilizar este aplicativo você concorda com a **[Política de Privacidade](https://github.com/samydsousa/logiccards/tree/main/privacy_policy_pt.md)** e com os **[Termos e Condições](https://github.com/samydsousa/logiccards/tree/main/terms_and_conditions_pt.md)** a ele relacionados.
 
 ## Versão
-1.0.3+5
+1.1.0+6
